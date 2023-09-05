@@ -8,15 +8,23 @@ Il programma dovrà stampare in console i numeri da 1 a 100 ma che:
 
 */
 
-for (let i = 1; i<= 100; i++){
-    console.log(i)
+const numeratoreElement = document.getElementById('tabellone');
+console.log(numeratoreElement);
+for (let i = 1; i <= 100; i++) {
+    const square = document.createElement('div');
+    numeratoreElement.append(square);
+    square.classList.add('square');
     if ((i % 3) === 0 && (i % 5) === 0) {
-        console.log('FizzBuzz');
+        square.innerHTML = ('FizzBuzz');
+        function colorsquare(){
+            document.getElementById('div').style.backgroundColor = "#ffffff";
+        }
     } else if (((i % 3) === 0)) {
-        console.log('Fizz');
+        square.innerHTML = ('Fizz');
     } else if (((i % 5) === 0)) {
-        console.log('Buzz');
+        square.innerHTML = ('Buzz');
     } else {
-        console.log(i);
+        square.innerHTML = (i);
     }
-}
+}   
+

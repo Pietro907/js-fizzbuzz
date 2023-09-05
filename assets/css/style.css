@@ -13,7 +13,9 @@ header {
     width: 25%;
     margin: 0 auto;
 }
-
+.wid_min {
+    min-width: 300px;
+}
 #title_page {
     color: rgb(254, 37, 37);
     box-shadow: 1px 8px 8px 8px;
@@ -22,9 +24,16 @@ header {
 #tabellone {
     width: 80%;
     background-color: green;
+    display: flex;
+    flex-wrap: wrap;
 }
 .square {
     background-color: antiquewhite;
     width: calc(100% / 12 * 2);
-    height: 100px;
+    aspect-ratio: 1;
+    border: 2px dashed red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
